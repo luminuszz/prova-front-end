@@ -15,6 +15,11 @@
 
     <link rel="stylesheet" href="./estilo.css" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
     <title>harley Davidson</title>
 </head>
 
@@ -23,7 +28,7 @@
 
     <main class="main">
 
-        <header class="banner">
+        <header data-aos="fade-left" class="banner">
             <nav class="navbar">
                 <div class="content">
                     <img src="./assets/logo.png" alt="logo" />
@@ -44,7 +49,8 @@
 
 
             <article class="card">
-                <img src="./assets/card-1.png" alt="card-image" />
+
+                <img data-aos="fade-left" src="./assets/card-1.png" alt="card-image" />
 
                 <div class="card-details">
                     <h3>Special Edition Paint</h3>
@@ -57,7 +63,7 @@
                             of 500 Street Glide ™ Special motorcycles
                         </p>
 
-                        <img class="card-footer" src="./assets/card-footer-1.png" />
+                        <img class="card-footer" src="./assets/card-footer-1-removebg-preview.png" />
 
                     </div>
 
@@ -82,7 +88,7 @@
                             H-D™ Certified and pre-owned H-D™ bikes.
                         </p>
 
-                        <img class="card-footer" src="./assets/card-footer-2.png" />
+                        <img class="card-footer" src="./assets/card-footer-2-removebg-preview.png" />
 
                     </div>
 
@@ -90,7 +96,7 @@
                     <button>Learn More</button>
                 </div>
 
-                <img src="./assets/card-1.png" alt="card-image" />
+                <img data-aos="fade-right" src="./assets/card-2.png" alt="card-image" id="card-2" />
 
             </article>
         </section>
@@ -111,7 +117,7 @@
 
             <article>
 
-                <div class="gallery-card">
+                <div data-aos="fade-left" class="gallery-card">
 
                     <img src="./assets/galery-card-1.png" alt="galery-image" />
 
@@ -120,7 +126,7 @@
                 </div>
 
 
-                <div class="gallery-card">
+                <div data-aos="fade-top" class="gallery-card">
 
                     <img src="./assets/galery-card-2.png" alt="galery-image" />
 
@@ -130,7 +136,7 @@
 
 
 
-                <div class="gallery-card">
+                <div data-aos="fade-right" class="gallery-card">
 
                     <img src="./assets/galery-card-3.png" alt="galery-image" />
 
@@ -165,5 +171,15 @@
 
     </main>
 </body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+    AOS.init({
+        delay: 200
+    });
+
+</script>
 
 </html>
